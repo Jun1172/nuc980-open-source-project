@@ -1,1 +1,0 @@
-http://www.nuvoton.com.cn/products/iot-solution/application/gateway/numaker-nuc980-iiot/?tab=2&group=Software&rt=Board%20Support%20Package%20(BSP)
