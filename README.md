@@ -3,6 +3,11 @@
 #### 介绍
 这是一个开源项目，使用NUC980芯片，公开所有的硬件、软件资料。
 
+#### 开源地址
+项目码云地址（国内下载速度快）：https://gitee.com/jun626/nuc980-open-source-project
+
+项目github地址：https://github.com/Jun1172/nuc980-open-source-project
+
 #### 博客教程
 1.  NUC980开源项目1-项目准备：https://blog.csdn.net/Jun626/article/details/104572848
 2.  NUC980开源项目2-开源计划：https://blog.csdn.net/Jun626/article/details/104572940
