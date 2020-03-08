@@ -1,0 +1,148 @@
+﻿/**
+ * Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+ */
+
+CKEDITOR.editorConfig = function( config ) {
+	// Define changes to default configuration here. For example:
+	// config.language = 'fr';
+	// config.uiColor = '#AADC6E';
+	// %REMOVE_START%
+
+	config.toolbarGroups = [
+			{ name: 'insert', groups: [ 'insert' ] },
+			{ name: 'colors', groups: [ 'colors' ] },
+			{ name: 'links', groups: [ 'links' ] },
+			{ name: 'undo', groups: [ 'undo' ] },
+			{ name: 'tools', groups: [ 'tools' ] }
+		];
+
+		config.removeButtons = 'DocProps,Cut,Copy,Paste,PasteText,PasteFromWord,Find,Replace,Subscript,Superscript,Outdent,Indent,SpecialChar,Styles,Csdnvideo,RemoveFormat,Source,Font,FontSize';
+// config.removeButtons= 'Emojione';
+	config.plugins =  'basicstyles,'+
+										'blockquote,'+
+										'dialogui,'+
+										'dialog,'+
+										'notification,'+
+										'button,'+
+										'toolbar,'+
+										'clipboard,'+
+										'panel,'+
+										'floatpanel,'+
+										'menu,'+
+										'contextmenu,'+
+										'enterkey,'+
+										'entities,'+
+										'popup,'+
+										'filetools,'+
+										'filebrowser,'+
+										'floatingspace,'+
+										'listblock,'+
+										'richcombo,'+
+										// 'format,'+
+										'horizontalrule,'+
+										'htmlwriter,'+
+										'wysiwygarea,'+
+										'image,'+
+										'indent,'+
+										'indentlist,'+
+										'fakeobjects,'+
+										'list,'+
+										'magicline,'+
+										'maximize,'+
+										'pastetext,'+
+										'pastefromword,'+
+										'removeformat,'+
+										'showborders,'+
+										'sourcearea,'+
+										'specialchar,'+
+										'menubutton,'+
+										'stylescombo,'+
+										'tab,'+
+										'table,'+
+										'tabletools,'+
+										'tableselection,'+
+										'undo,'+
+										'lineutils,'+
+										'widgetselection,'+
+										'widget,'+
+										'notificationaggregator,'+
+										'uploadwidget,'+
+										'uploadimage,'+
+										'codesnippet,'+
+										// 'find,'+
+										'autolink,'+
+										// 'autoembed,'+
+										'balloonpanel,'+
+										'chart,'+
+										'colordialog,'+
+										'docprops,'+
+										'imagebase,'+
+										'xml,'+
+										'ajax,'+
+										// 'emojione,'+
+										'image2,'+
+										'eqneditor,'+
+										'font,'+
+										'csdnvideo,'+
+										'imageuploader,'+
+										'indentblock,'+
+ 										'wordcount,'+  // 统计单词显示在编辑器页脚
+										'toc,'+
+										'SimpleLink,'+
+										'textindent,'+
+										// 'editareaup,'+ // 编辑区域向上滚动 集成到enterkey
+										// 'dialogadvtab,'+ // 表格高级对话框
+										'tableresize,'+ // 图表 鼠标调整表格列大小
+										'addsvgicon,'+ // 加载自定义的图标
+										'Summary,'+
+										'colorbutton,'+
+										'textselection';
+
+	 config.toolbarLocation = 'top';
+	 config.height = 700;
+	 config.extraPlugins = 'uploadimage';
+	 config.imageUploadUrl = '/UploadImage?shuiyin=2';
+	 // 上传图片返回信息时拦截的属性
+	 // 信息和图片生成的url由一个参数返回，报错则时错误信息，正常则是url ，所以必须要区分有无链接的情况
+	 config.imageUploadResponse = 'content';
+
+	 config.filebrowserImageUploadUrl= '/UploadImage?shuiyin=2';
+
+	 // config.allowedContent = true; // 允许一切
+	 config.extraAllowedContent = 'img[class](*);pre[class](*);a[href](*)';  // 开启自动模式 保留需要的内容
+	 // config.disallowedContent = 'img[width,height](*)';
+
+	 config.bodyClass = 'htmledit_views';  //给body设置class名
+	 config.pasteFilter = 'semantic-content'; // 粘贴内容 已知标签（除div，span）的所有属性（除了 style和class）将保持不变
+	 // Enables the greedy "put everywhere" mode.
+	 config.magicline_everywhere = 1; // 所有块元素显示辅助插入线
+	 // Changes magic line color to blue.
+	 config.magicline_color = '#ca0c16'; // 辅助插入线 颜色
+	 // 全屏时使用（暂时废弃）
+	 config.saveClass = {
+		 BODY:['ed_fullscreen'],
+		 MAIN:['container']
+	 }
+	 // 取消字体颜色按钮的更多颜色选项
+	 config.colorButton_enableMore = false;
+	 config.colorButton_colors = 'F33B45,FFBB66,86CA5E,E579B6,3399EA,7C79E5';
+	 try {
+		config.csdn_stlye_url = context_style_url;
+	 	config.codeSnippet_theme = codeStyle;
+	 } catch (e) {
+	 	config.csdn_stlye_url = null;
+		config.codeSnippet_theme = 'atom-one-dark';
+		config.sammary  = '';
+	 }
+
+	 // 增加图片外链转存逻辑
+	//  config.afterImg2Widget = function(curEvn) {
+	// 	 if (curEvn.data.src) {
+	// 		console.log(curEvn, curEvn.data.src);
+	// 		curEvn.destroy();
+	// 		console.log(curEvn.data.src);
+	// 	 }
+	//  }
+};
+

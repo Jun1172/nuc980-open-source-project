@@ -1,0 +1,1 @@
+﻿CKEDITOR.plugins.add("imageuploader",{init:function(a){a.config.filebrowserBrowseUrl="ckeditor/plugins/imageuploader/imgbrowser.php"}});
