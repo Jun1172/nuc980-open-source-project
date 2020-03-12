@@ -25,7 +25,13 @@
 14.  NUC980开源项目14-Linux内核启动：https://blog.csdn.net/Jun626/article/details/104724580
 15.  NUC980开源项目15-编译默认配置uboot：https://blog.csdn.net/Jun626/article/details/104728597
 16.  NUC980开源项目16-从SPI FLASH（W25Q128）启动：https://blog.csdn.net/Jun626/article/details/104729264
-
+17.  从SD卡启动uboot：https://blog.csdn.net/Jun626/article/details/104730949
+18.  从SD卡启动内核：https://blog.csdn.net/Jun626/article/details/104737311
+19.  UBOOT命令：https://blog.csdn.net/Jun626/article/details/104761311
+20.  文件IO操作GPIO：https://blog.csdn.net/Jun626/article/details/104763479
+21.  开启网络连接：https://blog.csdn.net/Jun626/article/details/104765113
+22.  文件系统编译：https://blog.csdn.net/Jun626/article/details/104782363
+23.  终端显示文件路径：https://blog.csdn.net/Jun626/article/details/104828064
 
 #### 参与贡献
 
