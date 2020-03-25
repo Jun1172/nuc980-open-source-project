@@ -32,6 +32,11 @@
 21.  NUC980开源项目21-开启网络连接：https://blog.csdn.net/Jun626/article/details/104765113
 22.  NUC980开源项目22-文件系统编译：https://blog.csdn.net/Jun626/article/details/104782363
 23.  NUC980开源项目23-终端显示文件路径：https://blog.csdn.net/Jun626/article/details/104828064
+24.  NUC980开源项目24-Please port gnulib freadahead.c to your platform!：https://blog.csdn.net/Jun626/article/details/104870430
+25.  NUC980开源项目25-编译最新版buildroot：https://blog.csdn.net/Jun626/article/details/104873950
+26.  NUC980开源项目26-SSH操作开发板：https://blog.csdn.net/Jun626/article/details/104883224
+27.  NUC980开源项目27-you should not run configure as root：https://blog.csdn.net/Jun626/article/details/104910546
+28.  NUC980开源项目28-error: RPC failed; curl 56 GnuTLS recv error (-110): The TLS connection was：https://blog.csdn.net/Jun626/article/details/105061039
 
 #### 参与贡献
 
